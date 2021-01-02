@@ -3,8 +3,8 @@ const one = new Number(1);
 const str = "Hello World";
 const b = true;
 const person = {
-    firstName: "Aaron";
-    lastName: "Powell";
+    firstName: "Aaron",
+    lastName: "Powell",
 };
 
 function sayHello(person) {
