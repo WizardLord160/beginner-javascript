@@ -10,8 +10,12 @@ async function longRunningOperation() {
 async function run() {
     // logic
     console.log('Start!!')
-    promiseTimeout(2000);
-    console.log('Stop!!');
+    await promiseTimeout(2000);
 
-    run();
+    const response = longRunningOperation();
+    console.log(response);
+
+    console.log('Stop!!');
 }
+
+run();
